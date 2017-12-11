@@ -1,5 +1,5 @@
-def lentele(dydis):
-    stlp_sk, eil_sk=dydis.split("x")
+def table(size):
+    stlp_sk, eil_sk=size.split("x")
     stlp_sk, eil_sk=int(stlp_sk),int(eil_sk)
     
     def sk():
@@ -18,5 +18,5 @@ def lentele(dydis):
         print("|")
     print(" ----" * stlp_sk)
 sk = 0
-dydis = input("Ivesk eiluciu ir stulpeliu kieki, pvz. 3x5: ")
-lentele(dydis)
+size = input("Table size?,(example: 3x5 ")
+table(size)
